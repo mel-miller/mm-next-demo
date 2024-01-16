@@ -1,95 +1,46 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client';
+
+import { Container, FlexContainer, Tile } from '@pantheon-systems/pds-toolkit-react';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <Container className={'pds-spacing-pad-block-xl'}>
+        <h1>Welcome!</h1>
+        <FlexContainer spacing='narrow' className={'pds-spacing-pad-block-xl'}>
+          <Tile
+            headingLevel='h2'
+            headingText='Docs'
+            imageSrc='https://cdn.bfldr.com/MEM5087K/at/b93hmb966p2ncswnxqgsj35c/Web_Text.svg'
+            linkContent={
+              <a href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'>
+                Learn more
+              </a>
+            }
+            summary='Find in-depth information about Next.js features and API.'
+          />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <Tile
+            headingLevel='h2'
+            headingText='Learn'
+            imageSrc='https://cdn.bfldr.com/MEM5087K/at/v3bs4994jjqbb9h4xkkw8k5/Online_Education.svg'
+            linkContent={
+              <a href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'>
+                Learn more
+              </a>
+            }
+            summary='Learn about Next.js in an interactive course with&nbsp;quizzes!'
+          />
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <Tile
+            headingLevel='h2'
+            headingText='PDS Toolkit'
+            imageSrc='https://cdn.bfldr.com/MEM5087K/at/btgr9h5q9v5wzwz9wkwt3qm/Tools.svg'
+            linkContent={<a href='https://live-pds-toolkit-react.appa.pantheon.site/'>Learn more</a>}
+            summary='Implement PDS components in your Next.js app.'
+          />
+        </FlexContainer>
+      </Container>
     </main>
-  )
+  );
 }
