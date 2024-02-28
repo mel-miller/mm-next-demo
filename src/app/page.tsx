@@ -25,7 +25,7 @@ export default function Home() {
             imageSrc='https://cdn.bfldr.com/MEM5087K/at/v3bs4994jjqbb9h4xkkw8k5/Online_Education.svg'
             linkContent={
               <a href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'>
-                Learn more
+                Let's go
               </a>
             }
             summary='Learn about Next.js in an interactive course with&nbsp;quizzes!'
@@ -35,7 +35,7 @@ export default function Home() {
             headingLevel='h2'
             headingText='PDS Toolkit'
             imageSrc='https://cdn.bfldr.com/MEM5087K/at/btgr9h5q9v5wzwz9wkwt3qm/Tools.svg'
-            linkContent={<a href='https://live-pds-toolkit-react.appa.pantheon.site/'>Learn more</a>}
+            linkContent={<a href='https://live-pds-toolkit-react.appa.pantheon.site/'>Go to the toolkit</a>}
             summary='Implement PDS components in your Next.js app.'
           />
         </FlexContainer>
