@@ -11,6 +11,9 @@ const mainNavigationLinks = [
   {
     linkContent: <Link href='/about'>About</Link>,
   },
+  {
+    linkContent: <Link href='/docs'>Docs</Link>,
+  },
 ];
 
 export default function RootLayout({ children }) {
@@ -18,6 +21,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body>
         <Navbar
+          containerWidth='standard'
           logoDisplay='sub-brand'
           logoLink={<a href='https://pantheon.io' />}
           logoSubBrand={{
