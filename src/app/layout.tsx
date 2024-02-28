@@ -1,9 +1,11 @@
 'use client';
 
-import '../../node_modules/@pantheon-systems/pds-toolkit-react/_dist/css/pds-core.css';
+import React from 'react';
+import Link from 'next/link';
 
 import { Navbar, NavMenu } from '@pantheon-systems/pds-toolkit-react';
-import Link from 'next/link';
+
+import '../../node_modules/@pantheon-systems/pds-toolkit-react/_dist/css/pds-core.css';
 
 const mobileMenuBreakpoint = 900;
 

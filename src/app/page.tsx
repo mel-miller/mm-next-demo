@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 import Link from 'next/link';
 import { Container, FlexContainer, Tile } from '@pantheon-systems/pds-toolkit-react';
 
