@@ -15,7 +15,7 @@ export default function Documentation() {
           <article slot='content' id='pds-toc-source' className='docs-content'>
             {docsSampleText}
           </article>
-          <TableOfContents slot='sidebar' headingText='Document contents' showHeading={true} />
+          <TableOfContents slot='sidebar' headingText='Document contents' showHeading={true} appendIds={true} />
         </SidebarLayout>
       </Container>
     </main>

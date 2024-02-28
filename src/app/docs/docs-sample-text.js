@@ -27,7 +27,7 @@ export const docsSampleText = (
       <li>Freegan ethical PBR&B tumblr</li>
       <li>Marxism raw denim</li>
     </ul>
-    <h2>Section 2</h2>
+    <h2 id='section-2'>Section 2</h2>
     <p>
       Section 2 is about the following things. A baby photo booth ennui pabst YOLO, organic migas trust fund gochujang
       sartorial wolf. Cold-pressed sus tumeric, vaporware palo santo next level succulents church-key bicycle rights
