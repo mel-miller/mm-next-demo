@@ -25,7 +25,7 @@ export default function Home() {
             imageSrc='https://cdn.bfldr.com/MEM5087K/at/v3bs4994jjqbb9h4xkkw8k5/Online_Education.svg'
             linkContent={
               <a href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'>
-                Let's go
+                Let&apos;s go
               </a>
             }
             summary='Learn about Next.js in an interactive course with&nbsp;quizzes!'
