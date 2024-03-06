@@ -33,7 +33,7 @@ export const docsSampleText = (
       neutral milk hotel marxism raw denim. Leggings actually PBR&B air plant try-hard tumblr, seitan celiac same cliche
       hella hammock ramps.
     </p>
-    <h3 id='section-1b.2'>Section 1b</h3>
+    <h3 id='h.lezozbiu2ur2'>Section 1b</h3>
     <p>Section 1b contains a list of things.</p>
     <ul>
       <li>Cold-pressed sus tumeric</li>
