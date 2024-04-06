@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Container, Navbar, NavMenu, SidebarLayout, SideNav  } from '@pantheon-systems/pds-toolkit-react';
+import { Container, InputText, Navbar, NavMenu, SidebarLayout, SideNav  } from '@pantheon-systems/pds-toolkit-react';
 
 import '../../node_modules/@pantheon-systems/pds-toolkit-react/_dist/css/pds-core.css';
 
@@ -72,7 +72,8 @@ export default function RootLayout({ children }) {
         </Navbar>
         <Container width='standard' className={'pds-spacing-pad-block-xl'}>
           <SidebarLayout sidebarLocation="left" sidebarMobileLocation="before">
-            <SideNav slot="sidebar" menuItems={ sideMenuItems } />
+            <SideNav slot="sidebar" menuItems={sideMenuItems} />
+            <InputText slot="content" type="search" label="Search" placeholder="Search site" id="site-search" showLabel={false} hasSearchShortcut={true} />
             <div slot="content">{children}</div>
             </SidebarLayout>
           </Container>
