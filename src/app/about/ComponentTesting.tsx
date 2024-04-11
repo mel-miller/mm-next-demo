@@ -1,7 +1,12 @@
 'use client';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-import { Button, MenuButton, SplitButton, Toaster } from '@pantheon-systems/pds-toolkit-react';
+import {
+  Button,
+  MenuButton,
+  SplitButton,
+  Toaster,
+} from '@pantheon-systems/pds-toolkit-react';
 
 const sampleActionItems = [
   {
@@ -18,11 +23,6 @@ const sampleActionItems = [
   },
 ];
 
-
-
-
-
-
 const categoryMenuItems = [
   {
     isLink: true,
@@ -38,7 +38,7 @@ const categoryMenuItems = [
 ];
 
 export const ComponentTesting = () => {
-const toastDuration = 3000;
+  const toastDuration = 3000;
 
   const [toastContent, setToastContent] = useState(null);
   const successToast = (
@@ -64,8 +64,7 @@ const toastDuration = 3000;
     setTimeout(() => {
       setToastContent(null);
     }, toastDuration + 1000);
-  }
-
+  };
 
   return (
     <div>
@@ -73,7 +72,11 @@ const toastDuration = 3000;
       <div className='pds-button-group'>
         <Button label='Toast' variant='primary' onClick={fireToast} />
         <SplitButton variant='secondary' actionItems={sampleActionItems} />
-        <MenuButton label='Filter by category' variant='secondary' menuItems={categoryMenuItems} />
+        <MenuButton
+          label='Filter by category'
+          variant='secondary'
+          menuItems={categoryMenuItems}
+        />
       </div>
       {toastContent}
     </div>
