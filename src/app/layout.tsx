@@ -21,6 +21,9 @@ const mainNavigationLinks = [
   {
     linkContent: <Link href='/docs'>Docs</Link>,
   },
+  {
+    linkContent: <Link href='/docs2'>Docs2</Link>,
+  },
 ];
 
 export default function RootLayout({ children }) {
