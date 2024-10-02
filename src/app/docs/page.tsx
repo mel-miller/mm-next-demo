@@ -9,7 +9,7 @@ import {
 } from '@pantheon-systems/pds-toolkit-react';
 
 import { docsSampleText } from './docs-sample-text';
-import { sideNavMenuItems } from '../../data/side-navigation.js';
+import { sideNavMenuItems } from '../../data/side-navigation';
 
 export default function Documentation() {
   return (
